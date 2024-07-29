@@ -1,0 +1,94 @@
+.trigger {
+  font-size: 18px;
+  padding: 24px;
+  line-height: 64px;
+  transition: color 0.3s;
+}
+
+.trigger:hover {
+  color: #3b6994;
+}
+
+.logo {
+  height: 80px;
+  margin: 16px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+nz-header {
+  background: #fff;
+  padding: 0;
+}
+
+nz-content {
+  margin: 0 16px;
+}
+
+nz-breadcrumb {
+  margin: 16px 0;
+}
+
+.inner-content {
+  padding: 24px;
+  background: #fff;
+  min-height: 360px;
+}
+
+nz-footer {
+  text-align: center;
+}
+
+.layoutLefth {
+  background-color: #00e676;
+  color: black;
+}
+
+.container {
+  height: 100vh;
+}
+
+.iconos {
+  display: inline-block;
+}
+
+.icono-container {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.icono {
+  margin-right: 15px;
+}
+.iconoUser {
+  font-size: 30px;
+}
+.icons{
+  text-align: center;
+}
+
+.icono-text {
+  font-size: 15px;
+}
+.iconoMedicine {
+  font-size: 30px;
+}
+
+a.router-link {
+  color: black;
+  text-decoration: none;
+}
+
+a.router-link:hover {
+  color: #102893;
+}

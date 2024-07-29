@@ -1,0 +1,74 @@
+{
+  "medicos": [
+    {
+      "nombre": "Laura Fernández",
+      "email": "laura.fernandez@email.com",
+      "matricula": 456789,
+      "especialidad": "Pediatra",
+      "telefono": 54934567890,
+      "estado": "Baja",
+      "id": "1021"
+    },
+    {
+      "nombre": "Diego Sánchez",
+      "email": "diego.sanchez@email.com",
+      "matricula": 789012,
+      "especialidad": "Ginecología",
+      "telefono": 54923456789,
+      "estado": "Alta",
+      "id": "174e"
+    },
+    {
+      "nombre": "Isabel Torres",
+      "email": "isabel.torres@email.com",
+      "matricula": 1234567,
+      "especialidad": "General",
+      "telefono": 54912345678,
+      "estado": "Alta",
+      "id": "3306"
+    },
+    {
+      "nombre": "Alejandro Moreno",
+      "email": "alejandro.moreno@email.com",
+      "matricula": 6543210,
+      "especialidad": "Pediatra",
+      "telefono": 54987654321,
+      "estado": "Baja",
+      "id": "98ef"
+    },
+    {
+      "id": "6587",
+      "nombre": "franco",
+      "email": "dasdas@dasdas",
+      "telefono": 56455445,
+      "matricula": 45454545,
+      "estado": "Suspendido",
+      "especialidad": "Pediatra"
+    }
+  ],
+  "clientes": [
+    {
+      "nombre": "Franco",
+      "email": "aasd@dasdas23",
+      "telefono": 45454545,
+      "dni": 45454545,
+      "observaciones": "45454551213213",
+      "id": "e8f3"
+    },
+    {
+      "id": "9244",
+      "nombre": "frnacoo",
+      "email": "dasdas@dasd",
+      "telefono": 777887,
+      "dni": 47454545
+    },
+    {
+      "nombre": "dato",
+      "email": "dato@dato",
+      "telefono": 454545,
+      "dni": 45455445,
+      "observaciones": "dasdas",
+      "id": "b4a4"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+<!-- <nz-layout class="container">
+  <nz-sider
+    class="layoutLefth"
+    nzCollapsible
+    [(nzCollapsed)]="isCollapsed"
+    [nzTrigger]="null"
+  >
+    <div class="logo"></div>
+    <ul nz-menu nzTheme="dark" nzMode="inline">
+      <div class="iconos">
+        <div nz-icon nzType="medicine-box" nzTheme="fill">
+          <div *ngIf="!isCollapsed" class="icon-layout">
+            <a routerLink="/backOffice/medicos"> <li>Medicos</li></a>
+          </div>
+        </div>
+      </div>
+      <div nz-icon nzType="medicine-box" nzTheme="fill">
+        <div *ngIf="!isCollapsed" class="icon-layout">
+          <a routerLink="/user/Users"><li>Clientes</li></a>
+        </div>
+      </div>
+    </ul>
+  </nz-sider>
+  <nz-layout>
+    <nz-header>
+      <span
+        class="trigger"
+        nz-icon
+        [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
+        (click)="isCollapsed = !isCollapsed"
+      ></span>
+    </nz-header>
+    <div class="conedorOulet">
+      <nz-content>
+        <div class="routerOutlet">
+          <router-outlet> </router-outlet>
+        </div>
+        <nz-breadcrumb> </nz-breadcrumb>
+      </nz-content>
+    </div>
+
+</nz-layout> -->
+
+<nz-layout class="container">
+  <nz-sider
+    style="background-color: #11d452"
+    class="layout-left"
+    nzCollapsible
+    [(nzCollapsed)]="isCollapsed"
+    [nzTrigger]="null"
+  >
+    <div class="logo">
+      <img src="../../../assets/estrellaSalud.png" />
+    </div>
+
+    <div class="icons">
+      <div class="icon-container" (click)="toggleCollapse()">
+        <div class="icon">
+          <span
+            nz-icon
+            nzType="medicine-box"
+            nzTheme="outline"
+            class="icon-medicine"
+          ></span>
+        </div>
+        <div class="icon-text" *ngIf="!isCollapsed">
+          <a routerLink="/backOffice/medicos" class="router-link" style="font-size: 17px"
+            >Médicos</a
+          >
+        </div>
+      </div>
+
+      <div class="icon-container" (click)="toggleCollapse()">
+        <div class="icon">
+          <span
+            nz-icon
+            nzType="user"
+            nzTheme="outline"
+            class="icon-user"
+          ></span>
+        </div>
+        <div class="icon-text" *ngIf="!isCollapsed">
+          <a
+            routerLink="/user/Users"
+            class="router-link"
+            style="font-size: 17px"
+            >Clientes</a
+          >
+        </div>
+      </div>
+    </div>
+  </nz-sider>
+  <nz-layout>
+    <nz-header>
+      <span
+        nz-icon
+        [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
+        (click)="toggleCollapse()"
+        style="font-size: 25px; margin-left: 5px"
+      ></span>
+    </nz-header>
+    <nz-content>
+      <router-outlet></router-outlet>
+    </nz-content>
+  </nz-layout>
+</nz-layout>

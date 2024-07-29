@@ -1,0 +1,43 @@
+<div class="buscar">
+    <nz-input-group [nzSuffix]="suffixIconSearch" >
+      <input nz-input placeholder="default size" nzSize="default" placeholder="Buscar" name="filterNombre" [(ngModel)]="filterNombre" />
+    </nz-input-group>
+    <ng-template #suffixIconSearch>
+      <span nz-icon nzType="search"></span>
+    </ng-template>
+    <div class="button-add">
+
+      <button nz-button nzType="primary" routerLink="/user/newUser">Agregar Cliente</button>
+
+    </div>
+    </div>
+
+
+    <nz-table #basicTable [nzShowPagination]="false" [nzData]="listOfData" class="tablaMedicos">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Telefono</th>
+            <th>DNI</th>
+            <th>Acciones</th>
+           
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of listOfData | searchClient:filterNombre"  class="editable-row" >
+            <td>{{ data.nombre}}</td>
+            <td>{{ data.email }}</td>
+            <td>{{ data.telefono}}</td>
+            <td>{{ data.dni}}</td>
+            <td>
+              <a   routerLink="/user/editUser/{{data.id}}" class="aEdit"><span nz-icon nzType="edit" nzTheme="outline">
+              </span>
+            </a>
+          </td>
+          </tr>
+        </tbody>
+      </nz-table>
+
+
+

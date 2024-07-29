@@ -1,0 +1,70 @@
+
+<div class="formulario">
+    <div class="titulo">
+      <h1 > {{title}}</h1>
+    </div>
+  <form nz-form [formGroup]="form">
+    <nz-form-item>
+      <nz-form-label [nzSpan]="7" nzRequired>Nombre</nz-form-label>
+      <nz-form-control [nzSpan]="12" nzValidatingTip="Validating..." [nzErrorTip]="userErrorTpl">
+        <input nz-input formControlName="nombre" placeholder="Nombre" maxlength="12"/>
+        <ng-template #userErrorTpl let-control>
+          <div *ngIf="(control.errors?.['required'])">
+            Ingresa tu nombre!</div>
+
+        </ng-template>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label [nzSpan]="7" nzRequired>E-mail</nz-form-label>
+      <nz-form-control [nzSpan]="12"  [nzErrorTip]="emailErrorTpl">
+        <input nz-input formControlName="email" placeholder="email" type="email" />
+        <ng-template #emailErrorTpl let-control>
+          <div *ngIf="(control.errors?.['email'])">Ingresar un E-mail valido!</div>
+
+
+        </ng-template>
+      </nz-form-control>
+    </nz-form-item>
+
+
+    <nz-form-item>
+      <nz-form-label [nzSpan]="7" nzRequired>Telefono</nz-form-label>
+      <nz-form-control [nzSpan]="12" [nzErrorTip]="telefono" >
+        <input nz-input formControlName="telefono"  placeholder="telefono" maxlength="10" type="number" >
+        <ng-template #telefono let-control>
+          <div *ngIf="(control.errors?.['required'])">Ingresa tu Telefono</div>
+
+        </ng-template>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+        <nz-form-label [nzSpan]="7" nzRequired>DNI</nz-form-label>
+        <nz-form-control [nzSpan]="12" [nzErrorTip]="dni" >
+          <input nz-input formControlName="dni"  placeholder="dni" maxlength="10" type="number" >
+          <ng-template #dni let-control>
+            <div *ngIf="(control.errors?.['required'])">Ingresa tu DNI</div>
+
+          </ng-template>
+        </nz-form-control>
+      </nz-form-item>
+
+      <nz-form-item>
+        <nz-form-label [nzSpan]="7" nzRequired>Observaciones</nz-form-label>
+        <nz-form-control [nzSpan]="12" nzHasFeedback nzErrorTip="Please write something here!">
+          <nz-textarea-count [nzMaxCharacterCount]="2000">
+            <textarea formControlName="observaciones" nz-input rows="2" placeholder="Ingresar observaciones"></textarea>
+          </nz-textarea-count>
+        </nz-form-control>
+      </nz-form-item>
+
+
+    <nz-form-item>
+      <nz-form-control [nzOffset]="6" [nzSpan]="12">
+
+        <button nz-button nzType="primary" [disabled]="!form.valid" type="submit" (click)="submitForm()">Guardar</button>
+        <button nz-button routerLink="/user/Users">Cancelar</button>
+      </nz-form-control>
+    </nz-form-item>
+  </form>
+

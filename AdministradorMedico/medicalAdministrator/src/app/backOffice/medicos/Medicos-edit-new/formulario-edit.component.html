@@ -1,0 +1,82 @@
+
+<div class="formulario">
+  <div class="titulo"> 
+    <h1 > {{title}}</h1>
+  </div>
+<form nz-form [formGroup]="form">
+  <nz-form-item>
+    <nz-form-label [nzSpan]="7" nzRequired>Nombre</nz-form-label>
+    <nz-form-control [nzSpan]="12" nzValidatingTip="Validating..." [nzErrorTip]="userErrorTpl">
+      <input nz-input formControlName="nombre" placeholder="Nombre" maxlength="12"/>
+      <ng-template #userErrorTpl let-control>
+        <div *ngIf="(control.errors?.['required'])"> 
+          Ingresa tu nombre!</div>
+
+      </ng-template>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="7" nzRequired>E-mail</nz-form-label>
+    <nz-form-control [nzSpan]="12"  [nzErrorTip]="emailErrorTpl">
+      <input nz-input formControlName="email" placeholder="email" type="email" />
+      <ng-template #emailErrorTpl let-control>
+        <div *ngIf="(control.errors?.['email'])">Ingresar un E-mail valido!</div>
+        
+      </ng-template>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="7" nzRequired>Matricula</nz-form-label>
+    <nz-form-control [nzSpan]="12" [nzErrorTip]="matricula" >
+      <input nz-input formControlName="matricula" placeholder="matricula"  type="number" maxLength="10"/>
+      <ng-template #matricula let-control>
+        <div *ngIf="(control.errors?.['required'])">Ingresa tu matricula!</div>
+        
+        
+        
+      </ng-template>
+    </nz-form-control>
+  </nz-form-item>
+  
+  <nz-form-item>
+    <nz-form-label [nzSpan]="7" nzRequired>Especialidad</nz-form-label>
+    <nz-form-control [nzSpan]="7" >
+      <nz-select name="select-validate" nzPlaceHolder="seleccionar" formControlName="especialidad" id="selectcion">
+        <nz-option nzValue="General" nzLabel="General"></nz-option>
+        <nz-option nzValue="Pediatra" nzLabel="Pediatra"></nz-option>
+        <nz-option nzValue="Ginecología" nzLabel="Ginecología"></nz-option>
+      </nz-select>
+    </nz-form-control>
+  </nz-form-item>
+  
+  <nz-form-item>
+    <nz-form-label [nzSpan]="7" nzRequired>Telefono</nz-form-label>
+    <nz-form-control [nzSpan]="12" [nzErrorTip]="telefono" >
+      <input nz-input formControlName="telefono"  placeholder="telefono" maxlength="10" type="number" >
+      <ng-template #telefono let-control>
+        <div *ngIf="(control.errors?.['required'])">Ingresa tu Telefono</div>
+        
+      </ng-template>
+    </nz-form-control>
+  </nz-form-item>
+
+  <nz-form-item>
+    <nz-form-label [nzSpan]="7" nzRequired>Estado</nz-form-label>
+    <nz-form-control [nzSpan]="7" >
+      <nz-select name="select-validate" nzPlaceHolder="seleccionar" formControlName="estado" id="selectcion">
+        <nz-option nzValue="Alta" nzLabel="Alta"></nz-option>
+        <nz-option nzValue="Baja" nzLabel="Baja"></nz-option>
+        <nz-option nzValue="Suspendido" nzLabel="Suspendido"></nz-option>
+      </nz-select>
+    </nz-form-control>
+  </nz-form-item>
+
+
+  <nz-form-item> 
+    <nz-form-control [nzOffset]="6" [nzSpan]="12">
+
+      <button nz-button nzType="primary" [disabled]="!form.valid" type="submit" (click)="submitForm()">Guardar</button>
+      <button nz-button routerLink="/backOffice/medicos">Cancelar</button>
+    </nz-form-control>
+  </nz-form-item>
+</form>

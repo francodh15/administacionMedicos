@@ -1,0 +1,47 @@
+.button-add{
+    
+    font-size: 20px;
+    margin: 0;
+}
+.aEdit {
+    margin-left: 10px;
+}
+.tablaMedicos{
+    margin: 20px;
+}
+input{
+    border: none;
+}
+a{
+    margin-left: 5px;
+    color: rgb(90, 88, 88);
+}
+
+.estado-baja {    
+    opacity: 0.4;
+  }
+.search-box {
+    padding: 8px;
+  }
+
+  .search-box input {
+    width: 188px;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  .search-box button {
+    width: 90px;
+  }
+
+  .search-button {
+    margin-right: 8px;
+  }
+  .buscar{
+    margin: 20px 20px; 
+    width: 200px;
+   
+  }
+  .ant-pagination {
+    display: none;
+  }

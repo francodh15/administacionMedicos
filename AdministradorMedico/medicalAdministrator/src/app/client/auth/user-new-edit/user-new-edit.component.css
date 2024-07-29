@@ -1,0 +1,28 @@
+
+[nz-button]{
+    margin: 0;
+    display: inline-block;
+  }
+  .formulario{
+    background-color: rgb(228, 228, 228);
+    padding: 10px;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 15px;
+  }
+  
+  .select{
+    max-width: 167px;
+    margin-left: 5px;
+  }
+  
+  
+  input {
+    border: none;
+    max-width: 150px;
+  }
+  #selectcion {
+    max-width: 150px;
+  }
+  

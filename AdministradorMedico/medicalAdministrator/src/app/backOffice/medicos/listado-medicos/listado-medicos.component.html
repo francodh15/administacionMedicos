@@ -1,0 +1,54 @@
+<div class="buscar">
+<nz-input-group [nzSuffix]="suffixIconSearch" >
+  <input nz-input placeholder="default size" nzSize="default" placeholder="Buscar" name="filterNombre" [(ngModel)]="filterNombre" />
+</nz-input-group>
+<ng-template #suffixIconSearch>
+  <span nz-icon nzType="search"></span>
+</ng-template>
+<div class="button-add">   
+
+  <button nz-button nzType="primary" routerLink="/backOffice/formularioMedicos">Agregar Medico</button>
+
+</div> 
+</div>
+
+
+<nz-table #basicTable [nzShowPagination]="false" [nzData]="listOfData" class="tablaMedicos">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Email</th>
+        <th>Matricula</th>
+        <th>Especialidad</th>
+        <th>Telefono</th>
+        <th>Estado</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of listOfData | search:filterNombre"  class="editable-row" [ngClass]="{
+        'estado-baja': data.estado === 'Baja',
+        'estado-alta': data.estado === 'Alta',
+        'estado-suspendido': data.estado === 'Suspendido'
+      }">
+        <td>{{ data.nombre}}</td>
+        <td>{{ data.email }}</td>
+        <td>{{ data.matricula }}</td>
+        <td>{{data.especialidad}}</td>
+        <td>{{data.telefono}}</td>
+        <td>{{ data.estado }}</td>
+        <td>
+          <a   routerLink="/backOffice/formularioEdit/{{data.id}}" class="aEdit"><span nz-icon nzType="edit" nzTheme="outline">
+          </span>
+        </a>
+          <a nz-popconfirm nzPopconfirmTitle="Estas seguro de eliminarlo?" (nzOnConfirm)="delete(data.id)"><span nz-icon nzType="delete" nzTheme="outline">
+          </span>
+        </a>
+      </td>
+      </tr>
+    </tbody>
+  </nz-table>
+  
+
+    
+    
