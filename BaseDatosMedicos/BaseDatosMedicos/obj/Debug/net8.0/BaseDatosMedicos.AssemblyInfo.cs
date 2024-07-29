@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BaseDatosMedicos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2fb14e8f5f9774da5f1cbc28eeb7fe3bb4c41a2")]
 [assembly: System.Reflection.AssemblyProductAttribute("BaseDatosMedicos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BaseDatosMedicos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

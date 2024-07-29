@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Person } from '../person';
+import { Person } from '../interface/person';
 
 @Pipe({
   name: 'searchClient'

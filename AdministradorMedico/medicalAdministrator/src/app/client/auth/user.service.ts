@@ -1,7 +1,10 @@
-import { Injectable } from '@angular/core';
+import { inject, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { clients } from 'src/app/interface/clients';
+import { conexionClientes } from 'src/app/ApiConnection/connectionClientes';
+import { ResponseAPI } from 'src/app/interface/respuesta';
+
 
 
 @Injectable({
@@ -9,30 +12,33 @@ import { clients } from 'src/app/interface/clients';
 })
 export class UserService {
 
-  private url = 'http://localhost:3000/clientes'
+  private http = inject(HttpClient);
+  private apiUrl:string = conexionClientes.apiUrl + "Clientes"
 
-  constructor (private HttpClient : HttpClient) {
+  constructor () {
   }
+
+
 
 //Metodo para agregar todos a la lista
   getClients () : Observable<clients[]> {
-    return this.HttpClient.get<clients[]>(this.url)
+    return this.http.get<clients[]>(this.apiUrl)
   }
 //Metodo para Editar
   updateClients (clients:clients){
-    return this.HttpClient.put(this.url + "/" + clients.id,clients)
+    return this.http.put<ResponseAPI>(this.apiUrl,clients);
   }
 //Metodo acceder a la lista
-  get(id:string): Observable<clients>{
-    return this.HttpClient.get<clients>(this.url + "/" + id)
+  get(id:number): Observable<clients>{
+    return this.http.get<clients>(`${this.apiUrl}/${id}`);
   }
 //Metodo para un nuevo Medico a la lista
  addClients(clients:any) {
-  return this.HttpClient.post(this.url,clients)
+  return this.http.post<ResponseAPI>(this.apiUrl,clients);
  }
  //Delete
  deleteClients(id:string){
-  return this.HttpClient.delete(this.url + "/" + id)
+  return this.http.delete<ResponseAPI>(`${this.apiUrl}/${id}`);
  }
  
 }

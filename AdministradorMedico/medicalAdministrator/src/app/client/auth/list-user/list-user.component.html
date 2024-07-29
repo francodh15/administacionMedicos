@@ -20,6 +20,7 @@
             <th>Email</th>
             <th>Telefono</th>
             <th>DNI</th>
+            <th>Observaciones</th>
             <th>Acciones</th>
            
           </tr>
@@ -30,6 +31,7 @@
             <td>{{ data.email }}</td>
             <td>{{ data.telefono}}</td>
             <td>{{ data.dni}}</td>
+            <td>{{data.observaciones}}</td>
             <td>
               <a   routerLink="/user/editUser/{{data.id}}" class="aEdit"><span nz-icon nzType="edit" nzTheme="outline">
               </span>

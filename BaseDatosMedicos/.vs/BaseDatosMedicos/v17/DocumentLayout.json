@@ -7,8 +7,12 @@
       "RelativeMoniker": "D:0:0:{1F8FD979-8889-45B7-ADE8-9FDD12D76792}|BaseDatosMedicos\\BaseDatosMedicos.csproj|solutionrelative:basedatosmedicos\\basededatos\\basedatosclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1F8FD979-8889-45B7-ADE8-9FDD12D76792}|BaseDatosMedicos\\BaseDatosMedicos.csproj|c:\\appmedicos\\basedatosmedicos\\basedatosmedicos\\basededatos\\basedatosmedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F8FD979-8889-45B7-ADE8-9FDD12D76792}|BaseDatosMedicos\\BaseDatosMedicos.csproj|solutionrelative:basedatosmedicos\\basededatos\\basedatosmedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1F8FD979-8889-45B7-ADE8-9FDD12D76792}|BaseDatosMedicos\\BaseDatosMedicos.csproj|c:\\appmedicos\\basedatosmedicos\\basedatosmedicos\\dto\\dtomedicos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F8FD979-8889-45B7-ADE8-9FDD12D76792}|BaseDatosMedicos\\BaseDatosMedicos.csproj|solutionrelative:basedatosmedicos\\dto\\dtomedicos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F8FD979-8889-45B7-ADE8-9FDD12D76792}|BaseDatosMedicos\\BaseDatosMedicos.csproj|c:\\appmedicos\\basedatosmedicos\\basedatosmedicos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F8FD979-8889-45B7-ADE8-9FDD12D76792}|BaseDatosMedicos\\BaseDatosMedicos.csproj|solutionrelative:basedatosmedicos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,21 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BaseDatosMedico.cs",
-              "DocumentMoniker": "C:\\AppMedicos\\BaseDatosMedicos\\BaseDatosMedicos\\BaseDeDatos\\BaseDatosMedico.cs",
-              "RelativeDocumentMoniker": "BaseDatosMedicos\\BaseDeDatos\\BaseDatosMedico.cs",
-              "ToolTip": "C:\\AppMedicos\\BaseDatosMedicos\\BaseDatosMedicos\\BaseDeDatos\\BaseDatosMedico.cs",
-              "RelativeToolTip": "BaseDatosMedicos\\BaseDeDatos\\BaseDatosMedico.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAwGwAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T11:59:07.548Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -41,9 +32,35 @@
               "RelativeDocumentMoniker": "BaseDatosMedicos\\BaseDeDatos\\BaseDatosClientes.cs",
               "ToolTip": "C:\\AppMedicos\\BaseDatosMedicos\\BaseDatosMedicos\\BaseDeDatos\\BaseDatosClientes.cs",
               "RelativeToolTip": "BaseDatosMedicos\\BaseDeDatos\\BaseDatosClientes.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAiAAAA",
+              "ViewState": "AQIAADcAAAAAAAAAAADwv2EAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T11:48:47.285Z",
+              "WhenOpened": "2024-07-29T15:36:42.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DtoMedicos.cs",
+              "DocumentMoniker": "C:\\AppMedicos\\BaseDatosMedicos\\BaseDatosMedicos\\Dto\\DtoMedicos.cs",
+              "RelativeDocumentMoniker": "BaseDatosMedicos\\Dto\\DtoMedicos.cs",
+              "ToolTip": "C:\\AppMedicos\\BaseDatosMedicos\\BaseDatosMedicos\\Dto\\DtoMedicos.cs",
+              "RelativeToolTip": "BaseDatosMedicos\\Dto\\DtoMedicos.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAxwA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T13:24:39.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\AppMedicos\\BaseDatosMedicos\\BaseDatosMedicos\\Program.cs",
+              "RelativeDocumentMoniker": "BaseDatosMedicos\\Program.cs",
+              "ToolTip": "C:\\AppMedicos\\BaseDatosMedicos\\BaseDatosMedicos\\Program.cs",
+              "RelativeToolTip": "BaseDatosMedicos\\Program.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAADwvyEAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T12:45:07.598Z",
               "EditorCaption": ""
             }
           ]

@@ -37,7 +37,7 @@ export class UserNewEditComponent implements OnInit {
     this.ActivatedRoute.params.subscribe((params) => {
       var id = params["id"];
       if (id) {
-        this.title = 'Editar Cliete';
+        this.title = 'Editar Cliente';
         this.clienteService.get(id).subscribe((data: any) => {
           this.cliente = data;
           this.form.addControl('id', this.formBuilder.control(data.id));

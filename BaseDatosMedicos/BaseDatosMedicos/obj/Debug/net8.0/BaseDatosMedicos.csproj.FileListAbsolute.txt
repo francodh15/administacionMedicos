@@ -36,3 +36,4 @@ C:\AppMedicos\BaseDatosMedicos\BaseDatosMedicos\obj\Debug\net8.0\refint\BaseDato
 C:\AppMedicos\BaseDatosMedicos\BaseDatosMedicos\obj\Debug\net8.0\BaseDatosMedicos.pdb
 C:\AppMedicos\BaseDatosMedicos\BaseDatosMedicos\obj\Debug\net8.0\BaseDatosMedicos.genruntimeconfig.cache
 C:\AppMedicos\BaseDatosMedicos\BaseDatosMedicos\obj\Debug\net8.0\ref\BaseDatosMedicos.dll
+C:\AppMedicos\BaseDatosMedicos\BaseDatosMedicos\obj\Debug\net8.0\BaseDatosMedicos.sourcelink.json

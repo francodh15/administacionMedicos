@@ -62,7 +62,7 @@ namespace BaseDatosMedicos.BaseDeDatos
                             Nombre = reader["Nombre"].ToString(),
                             Email = reader["Email"].ToString(),
                             Dni = Convert.ToInt32(reader["Dni"]),
-                            Telefono = Convert.ToInt32(reader["id"]),
+                            Telefono = Convert.ToInt32(reader["Telefono"]),
                             Observaciones = reader["Observaciones"].ToString()
                         };
                     }

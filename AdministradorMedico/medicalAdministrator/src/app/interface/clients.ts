@@ -1,11 +1,11 @@
 export interface clients {
   
-    nombre: string;
-    email: string;
-    dni: number;
-    telefono: number;
-    observaciones:string;
-    id:string
+    Nombre: string;
+    Email: string;
+    Dni: number;
+    Telefono: number;
+    Observaciones:string;
+    id:number
   
   }
   

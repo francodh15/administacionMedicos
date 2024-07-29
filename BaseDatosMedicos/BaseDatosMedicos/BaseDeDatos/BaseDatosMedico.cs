@@ -32,7 +32,7 @@ namespace BaseDatosMedicos.BaseDeDatos
                             id = Convert.ToInt32(reader["id"]),
                             Nombre = reader["Nombre"].ToString(),
                             Email = reader["Email"].ToString(),
-                            Matricula = reader["Matricula"].ToString(),
+                            Matricula = Convert.ToInt32(reader["Matricula"]),
                             Especialidad = reader["Especialidad"].ToString(),
                             Telefono = Convert.ToInt32(reader["Telefono"]),
                             Estado = reader["Estado"].ToString()
@@ -61,7 +61,7 @@ namespace BaseDatosMedicos.BaseDeDatos
                             id = Convert.ToInt32(reader["id"]),
                             Nombre = reader["Nombre"].ToString(),
                             Email = reader["Email"].ToString(),
-                            Matricula = reader["Matricula"].ToString(),
+                            Matricula = Convert.ToInt32(reader["Matricula"]),
                             Especialidad = reader["Especialidad"].ToString(),
                             Telefono = Convert.ToInt32(reader["Telefono"]),
                             Estado = reader["Estado"].ToString()

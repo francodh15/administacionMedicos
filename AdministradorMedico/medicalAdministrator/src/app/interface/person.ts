@@ -6,6 +6,6 @@ export interface Person {
   telefono: number;
   especialidad:string;
   estado:string;
-  id:string
+  id:number
 
 }
