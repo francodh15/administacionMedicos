@@ -72,7 +72,8 @@ end;
 
 go
 create procedure editarMedico
-(@Nombre varchar(50),
+(@id int,
+@Nombre varchar(50),
 @Email varchar(50),
 @Matricula varchar(50),
 @Especialidad varchar(50),
@@ -86,6 +87,7 @@ Matricula= @Matricula,
 Especialidad= @Especialidad,
 Telefono= @Telefono,
 Estado= @Estado
+where id = @id
 
 end;
 

@@ -9,7 +9,7 @@ Dni int,
 Observaciones varchar(240)
 );
 
-insert into Clientes(Nombre,Email,telefono,dni,observaciones) values('franco','franco@franco.com',1231245,43266543,'kjadjanjnjasnjnasa')
+insert into Clientes(Nombre,Email,Telefono,Dni,Observaciones) values('franco','franco@franco.com',1231245,43266543,'kjadjanjnjasnjnasa')
 
 select * from Clientes;
 
@@ -21,7 +21,9 @@ begin
 select id,
 Nombre,
 Email,
-Telefono
+Telefono,
+Dni,
+Observaciones
 
 from Clientes
 
@@ -37,8 +39,8 @@ select id,
 Nombre,
 Email,
 Telefono,
-dni,
-observaciones
+Dni,
+Observaciones
 
 from Clientes where id = @id
 end;
@@ -55,8 +57,8 @@ begin insert into Clientes(
 Nombre,
 Email,
 Telefono,
-dni,
-observaciones) values
+Dni,
+Observaciones) values
 (@Nombre,
 @Email,
 @Telefono,
@@ -66,7 +68,8 @@ end;
 
 go
 create procedure editarCliente
-(@Nombre varchar(50),
+(@id int,
+@Nombre varchar(50),
 @Email varchar(50),
 @Telefono int,
 @dni int,
@@ -76,8 +79,9 @@ begin update Clientes set
 Nombre = @Nombre,
 Email = @Email,
 Telefono= @Telefono,
-dni = @dni,
-observaciones = @dni
+Dni = @dni,
+Observaciones = @observaciones
+where id = @id;
 end;
 
 go
